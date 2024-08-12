@@ -23,6 +23,34 @@ class MainApp extends StatelessWidget {
             ],
           ),
         ),
+        drawer: Drawer(
+          child: ListView(
+            children: const [
+              DrawerHeader(
+                child: Text('Header'),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+              ),
+              ListTile(
+                title: Text('Item 1'),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text('Item 2'),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text('Item 3'),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text('Item 4'),
+                onTap: null,
+              ),
+            ],
+          ),
+        ),
         bottomNavigationBar: const BottomAppBar(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
